@@ -35,5 +35,5 @@ php bin/console fos:user:create
 ```
 php bin/console server:run
 ```
-11. выполнить CURL-запрос с телом вида *{"email":"string","password":"string"}* по пути */api/login* для получения jwt-токена
+11. выполнить POST-запрос с телом вида *{"email":"string","password":"string"}* по пути */api/login* для получения jwt-токена
 12. перейти в корень проекта по url-адресу */* и использовать полученный jwt-токен для выполнения запросов
