@@ -1,0 +1,9 @@
+api_login_check:
+    path: /api/login
+    methods: ['POST']
+home:
+    path: /
+    controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::redirectAction
+    defaults:
+        route: api_entrypoint
+        permanent: true
